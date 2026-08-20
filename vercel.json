@@ -3,6 +3,10 @@
     {
       "source": "/api/bookings",
       "destination": "/api/bookings.js"
+    },
+    {
+      "source": "/",
+      "destination": "/rayo.html"
     }
   ]
 }

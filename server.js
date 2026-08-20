@@ -89,7 +89,7 @@ app.get("/", (request, response) => {
 
 export { app };
 
-if (process.env.VERCEL !== "1") {
+if (!process.env.VERCEL) {
     normalizeStoredPrices().then(() => {
         app.listen(port, () => {
             console.log(`Nails By Rayo is running at http://localhost:${port}`);

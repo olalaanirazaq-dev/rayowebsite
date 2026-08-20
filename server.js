@@ -88,3 +88,4 @@ app.get("/", (request, response) => {
 });
 
 export { app };
+export default app;

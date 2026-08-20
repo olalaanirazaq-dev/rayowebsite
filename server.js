@@ -87,8 +87,12 @@ app.get("/", (request, response) => {
     response.sendFile(path.join(directory, "rayo.html"));
 });
 
-normalizeStoredPrices().then(() => {
-    app.listen(port, () => {
-        console.log(`Nails By Rayo is running at http://localhost:${port}`);
+export { app };
+
+if (process.env.VERCEL !== "1") {
+    normalizeStoredPrices().then(() => {
+        app.listen(port, () => {
+            console.log(`Nails By Rayo is running at http://localhost:${port}`);
+        });
     });
-});
+}

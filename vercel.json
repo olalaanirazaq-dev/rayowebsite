@@ -1,12 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/api/bookings",
-      "dest": "/api/bookings.js"
-    },
-    {
-      "src": "/.*",
-      "dest": "/api/bookings.js"
+      "source": "/",
+      "destination": "/rayo.html"
     }
   ]
 }

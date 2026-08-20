@@ -5,11 +5,8 @@
       "dest": "/api/bookings.js"
     },
     {
-      "handle": "filesystem"
-    },
-    {
       "src": "/.*",
-      "dest": "/rayo.html"
+      "dest": "/api/bookings.js"
     }
   ]
 }
